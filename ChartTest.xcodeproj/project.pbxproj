@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A534C75421CF1180215A064 /* Pods_ChartTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB45F41B5D58044284A268A /* Pods_ChartTest.framework */; };
 		B6088A2520D1433200CA9F0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6088A2420D1433200CA9F0D /* AppDelegate.swift */; };
 		B6088A2720D1433200CA9F0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6088A2620D1433200CA9F0D /* ViewController.swift */; };
 		B6088A2A20D1433200CA9F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6088A2820D1433200CA9F0D /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E7F6AAE133DF3EC31A1831C /* Pods-ChartTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChartTest/Pods-ChartTest.release.xcconfig"; sourceTree = "<group>"; };
+		4FB45F41B5D58044284A268A /* Pods_ChartTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A7CAC325B54A3F41C32A968 /* Pods-ChartTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChartTest/Pods-ChartTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B6088A2120D1433200CA9F0D /* ChartTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6088A2420D1433200CA9F0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6088A2620D1433200CA9F0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A534C75421CF1180215A064 /* Pods_ChartTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A19EB28400B7CF004C69F082 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FB45F41B5D58044284A268A /* Pods_ChartTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B6088A1820D1433200CA9F0D = {
 			isa = PBXGroup;
 			children = (
 				B6088A2320D1433200CA9F0D /* ChartTest */,
 				B6088A2220D1433200CA9F0D /* Products */,
+				CB4F98411E90EC344ECBD561 /* Pods */,
+				A19EB28400B7CF004C69F082 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = ChartTest;
 			sourceTree = "<group>";
 		};
+		CB4F98411E90EC344ECBD561 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A7CAC325B54A3F41C32A968 /* Pods-ChartTest.debug.xcconfig */,
+				0E7F6AAE133DF3EC31A1831C /* Pods-ChartTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6088A3320D1433200CA9F0D /* Build configuration list for PBXNativeTarget "ChartTest" */;
 			buildPhases = (
+				7CD14BA9F91A810E0A77BC02 /* [CP] Check Pods Manifest.lock */,
 				B6088A1D20D1433200CA9F0D /* Sources */,
 				B6088A1E20D1433200CA9F0D /* Frameworks */,
 				B6088A1F20D1433200CA9F0D /* Resources */,
+				1A84191AD398B0CE5FCE2DFB /* [CP] Embed Pods Frameworks */,
+				0F1793AB6B26CDD1F4260AB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F1793AB6B26CDD1F4260AB1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChartTest/Pods-ChartTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A84191AD398B0CE5FCE2DFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChartTest/Pods-ChartTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CD14BA9F91A810E0A77BC02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B6088A1D20D1433200CA9F0D /* Sources */ = {
@@ -272,11 +347,13 @@
 		};
 		B6088A3420D1433200CA9F0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A7CAC325B54A3F41C32A968 /* Pods-ChartTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGG4PHM8YL;
 				INFOPLIST_FILE = ChartTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hi-yuki.ChartTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,11 +364,13 @@
 		};
 		B6088A3520D1433200CA9F0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E7F6AAE133DF3EC31A1831C /* Pods-ChartTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGG4PHM8YL;
 				INFOPLIST_FILE = ChartTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hi-yuki.ChartTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";

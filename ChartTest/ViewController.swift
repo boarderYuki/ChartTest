@@ -29,9 +29,9 @@ class ViewController: UIViewController {
         iosDataEntry.label = "iOS"
         
         macDataEntry.value = macStepper.value
-        macDataEntry.label = "macOS"
+        //macDataEntry.label = "macOS"
         
-        numberOfDownloarsDataEntries = [iosDataEntry, macDataEntry]
+        numberOfDownloarsDataEntries = [iosDataEntry, macDataEntry, macDataEntry]
         updateChartData()
         
     }
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         let chartDataSet = PieChartDataSet(values: numberOfDownloarsDataEntries, label: nil)
         let chartData = PieChartData(dataSet: chartDataSet)
         
-        let colors = [UIColor.red, UIColor.blue]
+        let colors = [UIColor.red, UIColor.blue, UIColor.white]
         chartDataSet.colors = colors
         pieChart.data = chartData
     }
